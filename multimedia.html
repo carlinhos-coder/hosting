@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>multimedia</title>
+    <style>
+    video{
+        width: 500px
+    }
+    </style>
+</head>
+<body>
+  
+    <video  id="video"    src="media/videos/Las mareas.mp4" poster="img/logo.jpg" controls> video de las mareas</video>
+    <br>
+    
+    <button id="play">play</button>
+    <button id="pausa">pausa</button>
+<br>
+    <audio src="media/Silvio Rodriguez - Al final de este viaje.mp3" controls>cancion de silvio</audio>
+    <script>
+        const video=document.getElementById('video')
+        const play=document.getElementById('play')
+        const pausa=document.getElementById('pausa')
+
+        play.addEventListener('click',() =>{
+            video.play()
+
+        })
+        pausa.addEventListener('click',() =>{
+            video.pause();
+
+        })
+    </script>
+</body>
+</html>
