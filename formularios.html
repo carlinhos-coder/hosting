@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>formularios</h1>
+    <form >
+        <fieldset>
+            <legend>usuario y contraseña</legend>
+        <label>ingrese su nombre</label>
+        <input id="username"  type="text" name="nombre" id="nombre">
+        <label>
+            ingrese contraseña
+            <INPut id="password" type="password" name="password" required >
+
+        </label>
+    </fieldset>
+        <div>
+            <fieldset>
+                <legend>datos personales</legend>
+            <label>ingrese correo </label>
+                <input type="email">
+              <label>ingrese fecha de nacimiento</label>
+              <input type="date" name=" fecha" id="">
+              <label>ingrese cantidad de articulos</label>
+              <input type="number" name="cantidades" id="">
+              <input  name="number" placeholder="ingrese cantidad">
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>gustos e intereses</legend>
+                <label>
+                    <input type="checkbox" >musica
+                </label>
+                <label>
+                    <input type="checkbox">deporte
+                </label>
+                <label>
+                    <input type="checkbox">cine
+                </label>
+                <label>
+                    <input type="checkbox">triatlon
+                </label>
+                <label>
+                    <input type="checkbox">ciclismo
+                </label>
+                
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>
+                    <label>genero</legend>
+                        <input type="radio" name="gender">male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender">female
+                    </label>
+                   
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>pais</legend>
+                <label for="pais">seleccione pais de origen</label>
+                <select name="pais" id="pais">
+                    <optgroup label="america latina">
+                <option value="pais">colombia</option>
+                <option value="pais">peru</option>
+                <option value="pais">chile</option>
+                <option value="pais">bolivia</option>
+                <option value="pais">brazil</option>
+                <option value="pais">ecuador</option>
+            </optgroup>
+            <optgroup label="europa">
+                    <option value="pais">italia</option>
+                    <option value="pais">españa</option>
+                    <option value="pais">francia</option>
+                    <option value="pais">belgica</option>
+            </optgroup>
+            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="danos tu opinion"> </textarea>
+             </select>
+
+            </fieldset>
+        </div>
+
+        <button>enviar</button>
+<script>
+document.getElementById ('password').addEventListener('keyup',e =>{
+
+console.log(e.target.value)
+})
+
+</script>  
+
+    </form>
+</body>
+</html>
